@@ -26,7 +26,6 @@ CREATE TABLE `shopcafe`.`sanpham` (
   `tennv` VARCHAR(45) NULL,
   `gioitinhnv` TINYINT NULL,
   `idtaikhoan` INT NULL,
-  `anhnv` VARCHAR(45) NULL,
   PRIMARY KEY (`idnhanvien`),
   FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan`(`idtaikhoan`)
   );
@@ -36,7 +35,6 @@ CREATE TABLE `shopcafe`.`admin` (
   `idadmin` INT NOT NULL AUTO_INCREMENT,
   `ten` VARCHAR(45) NULL,
   `gioitinh` TINYINT NULL,
-  `img` VARCHAR(45) NULL,
   `idtaikhoan` INT NULL,
   PRIMARY KEY (`idadmin`),
   FOREIGN KEY (`idtaikhoan`) REFERENCES `taikhoan`(`idtaikhoan`)
