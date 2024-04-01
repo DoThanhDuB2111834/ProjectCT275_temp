@@ -50,7 +50,7 @@ CREATE TABLE `shopcafe`.`sanpham` (
   FOREIGN KEY (`tai_khoan_id`) REFERENCES `taikhoan`(`id`)
   );
   
-  CREATE TABLE `shopcafe`.`chitietsanpham` (
+  CREATE TABLE `shopcafe`.`chitiethoadon` (
   `hoa_don_id` INT NOT NULL,
   `san_pham_id` INT NOT NULL,
   `soluong` INT NULL DEFAULT 1,

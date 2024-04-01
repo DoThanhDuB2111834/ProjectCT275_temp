@@ -12,7 +12,7 @@ class SanPham extends Model
 
     public function HoaDon()
     {
-        return $this->belongsToMany(HoaDon::class, 'chitietsanpham')->withPivot('hoa_don_id');
+        return $this->belongsToMany(HoaDon::class, 'chitiethoadon')->withPivot('hoa_don_id');
     }
 
 }
