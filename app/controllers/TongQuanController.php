@@ -4,7 +4,7 @@ namespace App\controllers;
 
 use App\SessionGuard as Guard;
 
-class HomeController extends Controller
+class TongQuanController extends Controller
 {
     public function __construct()
     {
@@ -18,6 +18,6 @@ class HomeController extends Controller
     public function index()
     {
         // require_once __DIR__ . '../views/home.php';
-        $this->sendPage('home');
+        $this->sendPage('TongQuan');
     }
 }

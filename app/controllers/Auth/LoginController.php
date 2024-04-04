@@ -34,7 +34,7 @@ class LoginController extends Controller
             $errors['tendangnhap'] = 'Sai tên đăng nhập';
         } else if (Guard::login($user, $user_credentials)) {
             // Đăng nhập thành công...
-            redirect('/home');
+            redirect('/TongQuan');
         } else {
             // Sai mật khẩu...
             $errors['matkhau'] = 'Sai mật khẩu.';

@@ -45,6 +45,7 @@ CREATE TABLE `shopcafe`.`sanpham` (
   `ngaylap` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ghichu` TEXT(255) NULL,
   `tongtien` INT NULL DEFAULT 0,
+  `ban` INT NULL DEFAULT 1,
   `tai_khoan_id` INT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`tai_khoan_id`) REFERENCES `taikhoan`(`id`)
